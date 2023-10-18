@@ -24,23 +24,22 @@ export function addTodo(todo: Todo) {
 ```
 
 ```ts
-    import { createStore } from 'quark-store';
-    import { useStore } from 'quark-store/react';
+import { createStore, useStore } from 'quark-store';
 
-    const $todos = createStore<Todo[]>([]);
+const $todos = createStore<Todo[]>([]);
 
-    export const Todos = () => {
+export const Todos = () => {
 
-        return (
-            <>
-                <div>
-                    {
-                        todos.map((todo) => <div key={todo.id}>{todo.label}</div>)
-                    }
-                </div>
-            </>
-        )
-    }
+    return (
+        <>
+            <div>
+            {
+                todos.map((todo) => <div key={todo.id}>{todo.label}</div>)
+            }
+            </div>
+        </>
+    )
+}
 ```
 
 [Size Limit]: https://github.com/ai/size-limit
