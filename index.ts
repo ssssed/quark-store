@@ -46,10 +46,10 @@ class Store<T> implements QuarkStore<T> {
 
 /**
  * 
- * @param {QuarkStore<T>} $store 
+ * @param {Store<T>} $store 
  * @returns {T}
  */
-export const useStore = <T>($store: QuarkStore<T>): T => {
+export const useStore = <T>($store: Store<T>): T => {
     const value: T = useSyncExternalStore<T>($store.subscribe.bind($store), $store.get.bind($store));
     return value as T;
 }
