@@ -1,0 +1,35 @@
+{
+  "name": "quark-store",
+  "version": "0.0.1",
+	"description": "",
+	"main": "dist/index.js",
+	"types": "dist/types.d.ts",
+	"module": "dist/index.js",
+	"scripts": {
+		"build": "tsc"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ssssed/quark-store.git"
+	},
+	"files": [
+		"dist"
+	],
+	"keywords": [
+		"http",
+		"library",
+		"client",
+		"request",
+		"ajax",
+		"promise",
+		"web",
+		"api"
+	],
+	"author": "Igor Koneshov",
+	"license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18.2.28",
+    "react": "^18.2.0",
+    "typescript": "^5.2.2"
+  }
+}
