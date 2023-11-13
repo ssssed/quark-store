@@ -1,6 +1,6 @@
 {
 	"name": "quark-store",
-	"version": "0.0.7",
+	"version": "1.0.0",
 	"description": "A tiny (216 bytes) state manager for React, which allows you to work with react state as atoms",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
